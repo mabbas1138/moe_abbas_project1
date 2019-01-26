@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <div class="lgDisplayWrapper clearfix">
+        <div class="resolutionWrapper clearfix">
             <nav class="nav">
                 <ul class="navLinks clearfix">
                     <li><a href="#home">Home</a></li>
@@ -67,71 +67,74 @@
             </div>
         </section>
 
-        <section class="blog clearfix">
-            <div class="lgDisplayWrapper clearfix">
-            <div class="blogText">
-                <h2>Meet Alissa</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum
-                consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor.Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat
-                vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor.Lorem ipsum dolor
-                sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla el. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend.</p>
-                <a href="readMore.html" class="readMore">Read More</a>
-            </div>
-            <div class="blogImg">
-                <img src="./assets/alissaMed.jpeg" alt="Cyclist Alissa riding through the street" title="Cyclist Alissa riding through the street">
-            </div>
+        <section class="blog">
+            <div class="resolutionWrapper clearfix">
+                <div class="blogImg clearfix">
+                    <img src="./assets/alissaMed.jpeg" alt="Cyclist Alissa riding through the street" title="Cyclist Alissa riding through the street">
+                </div>
+                <div class="blogText">
+                    <h2>Meet Alissa</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum
+                    consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor. Lorem
+                    ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat
+                    vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor. Lorem ipsum dolor
+                    sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla el. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend.</p>
+                    <a href="readMore.html" class="readMore">Read More</a>
+                </div>
             </div>
         </section>
     </main>
 
         <section class="services">
-            <div class="lgDisplayWrapper">
-            <nav class="servicesLinks">
+            <nav class="servicesLinks clearfix">
                 <ul class="clearfix">
                     <li class="products">
-                        <div class="icon clearfix">
+                        <div class="icon">
                             <i class="fas fa-bicycle"></i>
                         </div>
                         <a href="products.html" class="themeColor">Products</a>
                     </li>
                     <li class="community">
-                        <div class="icon clearfix">
-                            <i class="fas fa-user"></i>
+                        <div class="icon">
+                            <i class="fas fa-users"></i>
                         </div>
                         <a href="community.html" class="themeColor">Community</a>
                     </li>
                     <li class="reachOut">
-                        <div class="icon clearfix">
+                        <div class="icon">
                             <i class="fas fa-phone"></i>
                         </div>
                         <a href="reachOut.html" class="themeColor">Reach out</a>
                     </li>
                 </ul>
             </nav>
-            </div>
+    
         </section>
 
-        <section class="lgDisplayWrapper gramContainer clearfix">
+        <section class="theGram">
+            <div class="theGramTitle">
                 <h2>The Gram</h2>
+            </div>
+            <div class="resolutionWrapper">
                 <div class="gramImagesContainer clearfix">
-                    <div class="gramImg">
-                        <img src="assets/orangeHelmetSmall.jpeg" class="gramImg" alt="cyclist with orange helmet rides on street" title="cyclist with orange helmet rides on street">
+                    <div class="theGramImg">
+                        <img src="assets/orangeHelmetMed.jpeg" class="gramImg" alt="cyclist with orange helmet rides on street" title="cyclist with orange helmet rides on street">
                     </div>
-                    <div class="gramImg">
+                    <div class="theGramImg">
                         <img src="assets/proCyclistMed.jpeg" class="gramImg" alt="crowd watches competitive cyclist passing by" title="crowd watches competitive cyclist passing by">
                     </div>
-                    <div class="gramImg">
+                    <div class="theGramImg">
                         <img src="assets/singleGearMed.jpeg" class="gramImg" alt="single-gear bike resting against house exterior" title="single-gear bike resting against house exterior">
                     </div>
                 </div>
             </div>
+
         </section>
   
 
     <footer>
-        <div class="lgDisplayWrapper clearfix">
+        <div class="resolutionWrapper clearfix">
             <nav class="navFooter">
                 <ul class="navLinks clearfix">
                     <li><a href="#home">Home</a></li>
@@ -140,7 +143,7 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <div class="communicate">
+            <div class="communicate clearfix">
                 <div class="contactContainer">
                     <h2 class="themeColor">Contact</h2>
                     <p>info@email.com | 123 - 456 - 7890
@@ -153,12 +156,11 @@
                     <h2 class="themeColor">Stay updated</h2>
                     <p>Subscribe to your newsletter to stay updated.
                     </p>
-                    <input type="text" class="emailAddress" placeholder="email address">
+                    <input type="email" class="emailAddress" placeholder="email address">
                     <button class="subscribe">Subscribe</button>
                 </div>
             </div>
         </div>
-
         <div class="copyrightContainer">
             <p>Copyright &copy; 2019 HackerYou</p>
         </div>
