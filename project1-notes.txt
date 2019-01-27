@@ -10,8 +10,16 @@ TO DO
 
 > Include Apple Touch icons and Favicon for the desktop site. Make sure to add more than one Apple Touch links (see notes)
 
+> Push final to Master
 
 QUESTIONS
+
+*Recommended usage for margin and padding:
+
+    To style spacing within and around the element, not for page layout or positioning large structural blocks.
+
+    -- Should the following NOT use margin and padding?  
+    1) 
 
 > Use single side border targeting for address in Contact Us?
 

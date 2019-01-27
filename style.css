@@ -25,7 +25,6 @@ html {
 
 body {
      font-size: 1rem;
-
 }
 
 img {
@@ -44,19 +43,37 @@ h2 {
     font-size: 2.1rem;
 }
 
-p {
-    font-family: "Catamaran", Open Sans;
-}
-
 ul {
     list-style-type: none;
+    
 }
 
-a {
+p,
+a,
+.readMore {
     font-family: "Catamaran", Open Sans;
-    font-size: 1rem;
+}
+
+.navLinks a,
+.servicesLinks a,
+.readMore {
     text-decoration: none;
 }
+
+.navLinks {
+    padding-left: 36%;
+}
+
+.navLinks li {
+    float: left;
+    padding: 20px;
+}
+
+.navLinks a {
+    font-weight: 600;
+    color: #ffffff;
+}
+
 
 .resolutionWrapper {
     margin: 0 auto;
@@ -64,18 +81,14 @@ a {
     padding: 1px;
 }
 
-.themeColor, 
-.socialMedia a {
+.themeColor {
     color: #f2a11c;
 }
 
 .readMore {
-    font-family: "Catamaran", Open Sans;
     font-size: 0.9rem;
     font-weight: bold;
-    text-decoration: none;
     text-transform: uppercase;
-    color: #f2a11c;
     background-color: #000;
     padding: 10px 36px;
 }
@@ -90,24 +103,6 @@ header {
     padding: 1px;
 }
 
-
-.navLinks {
-    padding-left: 36%;
-}
-
-.navLinks li {
-    
-    list-style-type: none;
-    float: left;
-    padding: 20px;
-}
-
-.navLinks a {
-    font-weight: 600;
-    color: #ffffff;
-    text-decoration: none;
-}
-
 .companyName {
     display: inline-block;
     margin: 12% 0 0 32%;
@@ -120,14 +115,12 @@ header {
 }
 
 .socialMedia ul {
-    list-style: none;
     text-align: center;
 }
 
 .socialMedia a {
      font-size: 1.2rem;
 }
-
 
 
 /* MAIN CONTENT */
@@ -146,21 +139,15 @@ header {
 
 /* 'About Us' Section */
 
-.aboutUsText {
-    width: 50%;
-    float: left;
-    padding: 60px 90px;
-}
-
+.aboutUsText,
 .aboutUsImg {
     width: 50%;
     float: left;
 }
 
-.aboutUsImg img {
-    width: 100%;
+.aboutUsText {
+    padding: 60px 90px;
 }
-
 
 /* 'Our Mission' Section */
 
@@ -172,18 +159,13 @@ header {
 
 .missionImg {
     width: 50%;
-    float: left;
 }
- 
-.missionImg img {
-    width: 100%;
-} 
 
 /* Blog Section */
 
 .blog {
     background-color: #f4f4f4;
-    padding: 100px 100px;
+    padding: 100px;
     margin-top: -5px;
 }
 
@@ -210,10 +192,6 @@ header {
     margin-top: 15px;
 }
 
-.blogImg img {
-    width: 100%;
-}
-
 
 /* 'Services' Section */
 
@@ -228,27 +206,23 @@ header {
 .servicesLinks {
     text-align: center;
     margin: 0 auto;
-    margin: 17vh 0 0 26%;
-}
-
-.servicesLinks ul {
-    margin: 0 auto;
+    margin: 17vh 0 0 25%;
 }
 
 .servicesLinks li {
     font-weight: bold;
     float: left;
-    padding: 60px;
+    padding: 40px;
 }
 
-.icon i {
+.servicesIcon i {
     color: #f4f4f4;
     font-size: 2rem;
     padding-bottom: 10px;
 }
 
-.service li a {
-    font-size: 30px;
+.servicesLinks a {
+    font-size: 1.5rem;
 }
 
 /* 'The Gram' Section */
@@ -268,11 +242,6 @@ header {
     float: left;
     margin-left: 50px;
 }
-
-.theGramImg img {
-    width: 100%;
-}
-
 
 /* FOOTER */
 
@@ -304,8 +273,8 @@ footer h2 {
 }
 
 .navFooter a {
-    text-transform: uppercase;
     font-size: 0.9rem;
+    text-transform: uppercase;
 }
 
 /* 'Communicate' div */
@@ -313,20 +282,16 @@ footer h2 {
 /* footer .resolutionWrapper {
     padding: 40px;
 }  */
-.communicate {
+
+/* .communicate {
     width: 100%;
-}
+} */
 
 .contactContainer {
     width: 40%;
     float: left;
     padding-left: 50px;
 }
-
-.contactContainer p {
-    width: 100%;
-}
-
 
 .stayUpdatedContainer {
     width: 60%;
@@ -336,38 +301,38 @@ footer h2 {
 }   
 
 input[type="email"] {
-    padding-left: 30px;
+    font-family: "Catamaran", Open Sans;
+    color: #232323;
     width: 432px;
     height: 50px;
-    font-family: "Catamaran";
-    color: #232323;
+    padding-left: 30px;
 }
 
 button {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #232323;
     background-color: #f2a11c;
     padding: 15px 30px;
     border: none;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #232323;
 }
 
 /* 'Copyright' section */
 
 .copyrightContainer {
-    background: #000;
-    width: 100%;
     text-align: center;
+    width: 100%;
+    background-color: #000;
     margin: 50px 0 -20px 0;
 }
 
 .copyrightContainer p {
     font-size: 0.9rem;
-    font-weight: 600;
-    opacity: 0.5;
     font: #4a4a4a;
+    font-weight: 600;
     letter-spacing: 1px;
+    opacity: 0.5;
     padding: 5px;
 }
 
