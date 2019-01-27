@@ -4,31 +4,22 @@ NOTES TO SELF
 
 TO DO
 
-> Put on GitHub
-
 > Use imported numbers for font weight 
-
-> Use single side border targeting for address in Contact Us
 
 > Leave comments in HTML to justify choices
 
 > Include Apple Touch icons and Favicon for the desktop site. Make sure to add more than one Apple Touch links (see notes)
 
-> Change leadWrapper to leadContainer
-
-> Why does Meet Alissa h2 have margin-bottom: 34px?
 
 QUESTIONS
 
-> Not sure how to calculate the margins for Gram images:
+> Use single side border targeting for address in Contact Us?
 
--- .gramImg {
-    width: calc((100% - 200px) / 3);
-    float: left;
-    margin: 20px;
-}
+> Any other method to use besides margin: -X to remove padding above?
 
-> I was told by an instructor here that you should group all related sentences under one p tag, rather than breaking them up into their own for stylistic purposes.
+> Are we supposed to reference height values in Zeplin design?
+
+> Not sure how to fix Contact section
 
 ====
 

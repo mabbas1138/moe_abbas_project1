@@ -78,7 +78,6 @@ a {
     color: #f2a11c;
     background-color: #000;
     padding: 10px 36px;
-   
 }
 
 /* HEADER */
@@ -91,24 +90,33 @@ header {
     padding: 1px;
 }
 
+
 .navLinks {
     padding-left: 36%;
 }
 
 .navLinks li {
+    
     list-style-type: none;
     float: left;
-    padding: 10px;
+    padding: 20px;
 }
 
 .navLinks a {
-    color: white;
+    font-weight: 600;
+    color: #ffffff;
     text-decoration: none;
+}
+
+.companyName {
+    display: inline-block;
+    margin: 12% 0 0 32%;
+    text-align: center;
 }
 
 .socialMedia {
     display: inline-block;
-    padding-left: 23%;
+    padding-left: 25%;
 }
 
 .socialMedia ul {
@@ -116,27 +124,32 @@ header {
     text-align: center;
 }
 
-.companyName {
-    display: inline-block;
-    margin: 10% 0 0 30%;
-    text-align: center;
+.socialMedia a {
+     font-size: 1.2rem;
 }
+
+
 
 /* MAIN CONTENT */
 
+/* 'About Us' and 'Mission Statement' Sections */
+
+.aboutUsText p, 
+.missionText p {
+    line-height: 30px;
+}
+
+.aboutUsText h2,
+.missionText h2 {
+    margin-bottom: -10px;
+}
+
 /* 'About Us' Section */
-
-
 
 .aboutUsText {
     width: 50%;
     float: left;
-    padding: 60px 60px 60px 90px;
-}
-
-.aboutUsText p {
-    margin-bottom: 5%;
-    line-height: 30px;
+    padding: 60px 90px;
 }
 
 .aboutUsImg {
@@ -154,38 +167,30 @@ header {
 .missionText {
     width: 50%;
     float: right;
-    padding: 80px 80px 80px 70px;
-}
-
-.missionText p {
-    margin-bottom: 5%;
-    line-height: 30px;
+    padding: 60px 90px;
 }
 
 .missionImg {
     width: 50%;
     float: left;
 }
-
+ 
 .missionImg img {
     width: 100%;
-}
+} 
 
 /* Blog Section */
-
 
 .blog {
     background-color: #f4f4f4;
     padding: 100px 100px;
-    
+    margin-top: -5px;
 }
 
 .blogText {
     width: 75%;
-    float: right;
-    padding-left: 40px;
-    margin-top: -325px;
-
+    float: left;
+    padding-left: 50px;
 }
 
 .blogText h2 {
@@ -193,22 +198,21 @@ header {
 }
 
 .blogText p {
-    line-height: 29px;
+    line-height: 27px;
     letter-spacing: 0;
     margin-top: 1px;
+
 }
 
 .blogImg {
     width: 25%;
+    float: left;
+    margin-top: 15px;
 }
 
 .blogImg img {
     width: 100%;
-    float: left;
-
 }
-
-
 
 
 /* 'Services' Section */
@@ -295,47 +299,67 @@ footer h2 {
     text-align: center;
 }
 
+.navFooter li {
+    padding: 20px;
+}
+
 .navFooter a {
     text-transform: uppercase;
+    font-size: 0.9rem;
 }
 
 /* 'Communicate' div */
 
+/* footer .resolutionWrapper {
+    padding: 40px;
+}  */
 .communicate {
     width: 100%;
 }
 
 .contactContainer {
-    width: 25%;
-    float: left;
-    padding-left: 48px;
-}
-
-.contactContainer {
-    /* padding-right: 50px; */
-}
-
-.stayUpdatedContainer {
     width: 40%;
     float: left;
-    margin-left: 300px;
+    padding-left: 50px;
+}
+
+.contactContainer p {
+    width: 100%;
+}
+
+
+.stayUpdatedContainer {
+    width: 60%;
+    float: left;
+    padding-left: 130px;
     
 }   
 
 input[type="email"] {
+    padding-left: 30px;
     width: 432px;
+    height: 50px;
+    font-family: "Catamaran";
+    color: #232323;
 }
 
 button {
     background-color: #f2a11c;
+    padding: 15px 30px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #232323;
 }
+
 /* 'Copyright' section */
 
 .copyrightContainer {
     background: #000;
     width: 100%;
     text-align: center;
-    margin: 51px 0 -30px 0;
+    margin: 50px 0 -20px 0;
 }
 
 .copyrightContainer p {
