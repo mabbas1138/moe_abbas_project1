@@ -4,6 +4,8 @@ NOTES TO SELF
 
 TO DO
 
+> Consider taking out .companyName class and just leave as h1
+
 > Use imported numbers for font weight 
 
 > Leave comments in HTML to justify choices
@@ -20,6 +22,10 @@ QUESTIONS
 
     -- Should the following NOT use margin and padding?  
     1) 
+
+> How should the header HTML structure be? h1 first, then the navs? Navs first, then the h1?
+
+> Should we be compressing the large photo files? For Desktop, I'm using Med size (without compression)
 
 > Use single side border targeting for address in Contact Us?
 
@@ -67,8 +73,6 @@ CLASS NOTES
 > NUMBER OF WORDS OR SENTENCES/LINE: Don't fuss over it. They just want things to remain proportional to each other
 
 > It's ok to scale font sizes in between for sake of UX -- scale it down according to viewport
-
-> Get icons from Font Awesome
 
 > Accessibility should be covered with these designs. If you have concerns, let Fatima know. 
 
