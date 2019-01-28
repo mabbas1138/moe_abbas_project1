@@ -4,6 +4,15 @@ NOTES TO SELF
 
 TO DO
 
+
+
+
+***DO SRCSET AND ADD MOBILE IMAGES***
+
+
+
+
+
 > Consider taking out .companyName class and just leave as h1
 
 > Use imported numbers for font weight 

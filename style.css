@@ -358,7 +358,14 @@ button {
 
 @media(max-width: 480px) {
 
+    /* General */
+
+    .resolutionWrapper {
+        width: 432px;
+    }
+
     /* Header */
+
 
     header {
         height: 600px;
@@ -391,7 +398,7 @@ button {
     .aboutUsText,
     .missionText {
         text-align: center;
-        padding: 60px;
+        /* padding: 60px; */
     }
     .aboutUsText,
     .aboutUsImg, 
@@ -406,7 +413,25 @@ button {
 
     /* Blog section */
 
-    
+    .blog {
+        padding: 0;
+        margin: 0;
+    }
 
-  
-}
+    .blogText {
+        width: 100%;
+        margin: auto;
+        padding: 31px;
+        /* padding: 10px; */
+    }
+
+    .blogText h2 {
+        text-align: center;
+    }
+
+    .blogImg {
+        width: 90%;
+        /* margin-left: 60px; */
+
+    }
+
