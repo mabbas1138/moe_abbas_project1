@@ -4,6 +4,15 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black;
+}
+
 .visuallyhidden:not(:focus):not(:active) {
     position: absolute;
     width: 1px;
@@ -17,6 +26,8 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
     overflow: hidden;
  }
 
+
+
  /* GENERAL STYLES  */
 
 html {
@@ -25,6 +36,11 @@ html {
 
 body {
      font-size: 1rem;
+}
+
+
+.skip-link:focus {
+  left: 0;
 }
 
 img {
@@ -45,7 +61,6 @@ h2 {
 
 li {
     list-style-type: none;
-    
 }
 
 p,
@@ -434,4 +449,4 @@ button {
         /* margin-left: 60px; */
 
     }
-
+}

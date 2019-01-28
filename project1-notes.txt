@@ -1,15 +1,25 @@
-NOTES TO SELF
-
-> Why Ems? https://css-tricks.com/why-ems/
-
 TO DO
 
 
 
 
 ***DO SRCSET AND ADD MOBILE IMAGES***
+-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
+
+> Add labels to input to make it accessible
+
+> See if input=email and input=submit is used in footer
+
+> Add #maincontent to sections (for skip link)
+
+> Make sure you're not floating <a> (float the <li>)
+
+> Make sure you're styling the links <a>, not the <li>
+
+> style a tags in servicesLinks, not the li (see simple-nav exercise)
 
 
+> **It doesn't matter if list-style: none is on ul or li. But be consistent.
 
 
 
@@ -24,6 +34,8 @@ TO DO
 > Push final to Master
 
 QUESTIONS
+
+> I DIDN'T USE 1600px MAX WIDTH -- HOW TO ACCOUNT FOR IT?
 
 *Recommended usage for margin and padding:
 
