@@ -6,11 +6,6 @@ TO DO
 ***DO SRCSET AND ADD MOBILE IMAGES***
 -- https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
 
-> Add labels to input to make it accessible
-
-> See if input=email and input=submit is used in footer
-
-> Add #maincontent to sections (for skip link)
 
 > Make sure you're not floating <a> (float the <li>)
 
@@ -28,8 +23,6 @@ TO DO
 > Use imported numbers for font weight 
 
 > Leave comments in HTML to justify choices
-
-> Include Apple Touch icons and Favicon for the desktop site. Make sure to add more than one Apple Touch links (see notes)
 
 > Push final to Master
 

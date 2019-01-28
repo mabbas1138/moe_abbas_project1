@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-    <a href="#maincontent" class="skip-link">Skip to main content.</a>
+    <a href="#mainContent" class="skip-link">Skip to main content.</a>
     <header>
         <nav class="navHome">
             <img src="assets/hamburger-menu.svg" class="hamburger">
@@ -50,7 +50,7 @@
         </nav>  
     </header>
 
-    <main id="maincontent">
+    <main id="mainContent">
         <section class="aboutUsMainContainer clearfix">
             <div class="aboutUsText clearfix">
                 <h2>About Us</h2>
@@ -163,7 +163,8 @@
                     <h2 class="themeColor">Stay updated</h2>
                     <p>Subscribe to your newsletter to stay updated.
                     </p>
-                    <input type="email" class="emailAddress" placeholder="email address">
+                    <label for="email" class="visuallyHidden">Email</label>
+                    <input type="email" name="email" class="emailAddress" placeholder="email address">
                     <button type="submit">Subscribe</button>
                 </div>
             </div>
