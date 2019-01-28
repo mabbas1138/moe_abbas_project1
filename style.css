@@ -96,7 +96,7 @@ a,
 
 header {
     min-height: 100vh;
-    background-image: url(assets/headerBgSmall.jpeg);
+    background-image: url(assets/headerImgs/headerBgMed.jpeg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -108,6 +108,13 @@ h1 {
     top: 200px;
     left: 450px;
     text-align: center;
+}
+
+.hamburger {
+    position: absolute;
+    top: 0;
+    left: 720px;
+    display: none;
 }
 
 .socialMedia {
@@ -197,7 +204,7 @@ h1 {
 
 .services {
     min-height: 56vh;
-    background-image: url(assets/ctrySideRideSmall.jpeg);
+    background-image: url(assets/servicesImgs/ctrySideBgMed.jpeg);
     background-position: center;
     background-size: cover;
     padding: 1px;
@@ -350,25 +357,56 @@ button {
 /* Portrait phones and down */
 
 @media(max-width: 480px) {
+
+    /* Header */
+
     header {
         height: 600px;
         width: 480px;
-        background-image: url(assets/headerBgMobSmall.jpg);
+        background-image: url(assetsheaderBgMobSmall.jpg);
         background-position: center;
         background-size: cover;
     }
     
     h1 {
-        font-size: 3.75rem;
-        margin-top: 70px;
+        font-size: 4rem;
         text-align: center;
         position: initial;
+        margin: 190px auto;
     }
 
+    .socialMedia,
+    .navLinks {
+        display: none;
+    }
 
+    .hamburger {
+        display: inline-block;
+        position: initial;
+        margin: 20px 0 0 400px;
+    }
 
-
-    .aboutUsText {
+    /* 'About Us' and 'Our Mission' Section */
+    
+    .aboutUsText,
+    .missionText {
         text-align: center;
+        padding: 60px;
     }
+    .aboutUsText,
+    .aboutUsImg, 
+    .missionText,
+    .missionImg {
+        width: 100%;
+    }
+
+    .aboutUsImg {
+        /* height: 227px; */
+    }
+
+    /* Blog section */
+
+    
+
+  
 }
