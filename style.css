@@ -231,13 +231,11 @@ h1 {
 
 .servicesLinks {
     text-align: center;
-    margin: 0 auto;
-    margin: 17vh 0 0 25%;
+    margin: 22vh 0 0 400px;
 }
 
 .servicesLinks li {
     float: left;
-    
 }
 
 .servicesIcon i {
@@ -423,12 +421,6 @@ button {
         padding: 20px;
     }
 
-    .aboutUsImg,
-    .missionImg {
-       /* margin: auto; */
-    }
-    /* Blog section */
-
     .blog {
         padding: 0;
         margin: 0;
@@ -457,12 +449,26 @@ button {
         text-align: center;
     }
 
+    /* Services Section */
+
     .services {
         width: 400px;
         height: 563px;
-        background-image: url(assets/servicesImgs/ctrySideBgSmall.jpeg);
-        background-position: center;
-        background-size: cover;
-        padding: 1px;
-}
+        background-image: url(assets/servicesImgs/ctrySideBgMed.jpeg);
+        background-position: -1000px 0;
+    
+    }
+
+    .servicesLinks {
+        margin: 0;
+    }
+
+    .servicesLinks li {
+        float: none;
+        margin-top: 60px;
+    }
+
+    
+    
+
 }

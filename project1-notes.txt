@@ -1,7 +1,10 @@
 TO DO
 
+> HOW DO YOU GET THE BIKE TO SHOW IN MOBILE DESISN SERVICES?
+
 > Reconsider using Position Relative on hamburger -- look it up
 
+> Check to see if you should use padding on servicesLinks a or li
 
 ***DO SRCSET AND ADD MOBILE IMAGES***
 -- https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
