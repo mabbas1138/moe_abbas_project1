@@ -17,7 +17,9 @@
 </head>
 <body>
     <a href="#mainContent" class="skip-link">Skip to main content.</a>
+    
     <header>
+        <div class="resolutionWrapper">
         <nav class="navHome">
             <img src="assets/hamburger-menu.svg" class="hamburger">
             <ul class="navLinks clearfix">
@@ -47,11 +49,15 @@
                             class="visuallyhidden">Twitter</span></a>
                 </li>
             </ul>
-        </nav>  
+        </nav>
+        </div>
     </header>
 
     <main id="mainContent">
+        
         <section class="aboutUsMainContainer clearfix">
+            <div class="resolutionWrapper">
+            <img src="./assets/aboutUsImgs/footPedalMobSmall.jpeg" class="mobileImage" alt="Black and white close-up on a cyclist's foot pedalling" title="Black and white close-up on a cyclist's foot pedalling">
             <div class="aboutUsText clearfix">
                 <h2>About Us</h2>
                 <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla pulvinar tortor a elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus. Vestibulum vitae tincidunt sem, a blandit sem. Quisque interdum orci.
@@ -59,12 +65,16 @@
                 <a href="#" class="themeColor readMore">Read More</a>
             </div>
             <div class="aboutUsImg clearfix">
-                <img src="./assets/aboutUsImgs/footPedalMed.jpeg" alt="Black and white close-up on a cyclist's foot pedalling" title="Black and white close-up on a cyclist's foot pedalling">
+                <img src="./assets/aboutUsImgs/footPedalMed.jpeg" class="desktopImage" alt="Black and white close-up on a cyclist's foot pedalling" title="Black and white close-up on a cyclist's foot pedalling">
+            </div>
             </div>
         </section>
         
-
+        
+       
         <section class="missionMainContainer clearfix">
+            <div class="resolutionWrapper">
+            <img src="./assets/ourMissionImgs/blkBikeMobSmall.jpeg" class="mobileImage" alt="A model of a black bike on display" title="A model of a black bike on display">
             <div class="missionText clearfix">
                 <h2>Our Mission</h2>
                 <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla pulvinar tortor a elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus. Vestibulum vitae tincidunt sem, a blandit sem. Quisque interdum orci.
@@ -72,9 +82,11 @@
                 <a href="" class="themeColor readMore">Read More</a>
             </div>
             <div class="missionImg clearfix">
-                <img src="./assets/ourMissionImgs/blkBikeSmall.jpeg" alt="A model of a black bike on display" title="A model of a black bike on display">
+                <img src="./assets/ourMissionImgs/blkBikeSmall.jpeg" class="desktopImage" alt="A model of a black bike on display" title="A model of a black bike on display">
+            </div>
             </div>
         </section>
+        
 
         <section class="blog">
             <div class="resolutionWrapper clearfix">
@@ -94,7 +106,9 @@
             </div>
         </section>
     </main>
+
         <section class="services">
+            <div class="resolutionWrapper clearfix">
             <nav class="servicesLinks clearfix">
                 <ul class="clearfix">
                     <li class="service">
@@ -117,6 +131,7 @@
                     </li>
                 </ul>
             </nav>
+            </div>
     
         </section>
 
@@ -142,7 +157,7 @@
   
     <footer>
         <div class="resolutionWrapper clearfix">
-            <nav class="nav">
+            <nav class="navFooter">
                 <ul class="navLinks clearfix">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -153,17 +168,16 @@
             <div class="communicate clearfix">
                 <div class="contactContainer">
                     <h2 class="themeColor">Contact</h2>
-                    <p>info@email.com | 123 - 456 - 7890
-                    123 some road, Toronto, ON
-                    A5A 5A5, Canada
-                    </p>
+                    <p>info@email.com | 123 - 456 - 7890</p>
+                    <p>123 some road, Toronto, ON</p>
+                    <p>A5A 5A5, Canada</p>
                 </div>
             
                 <div class="stayUpdatedContainer">
                     <h2 class="themeColor">Stay updated</h2>
                     <p>Subscribe to your newsletter to stay updated.
                     </p>
-                    <label for="email" class="visuallyHidden">Email</label>
+                    <label for="email" class="visuallyhidden">Email</label>
                     <input type="email" name="email" class="emailAddress" placeholder="email address">
                     <button type="submit">Subscribe</button>
                 </div>

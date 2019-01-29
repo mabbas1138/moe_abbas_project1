@@ -26,8 +26,6 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
     overflow: hidden;
  }
 
-
-
  /* GENERAL STYLES  */
 
 html {
@@ -37,7 +35,6 @@ html {
 body {
      font-size: 1rem;
 }
-
 
 .skip-link:focus {
   left: 0;
@@ -57,6 +54,11 @@ h1 {
 
 h2 {
     font-size: 2.1rem;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
 }
 
 li {
@@ -81,17 +83,18 @@ a,
 
 .navLinks li {
     float: left;
-    padding: 20px;
+    
 }
 
 .navLinks a {
     font-weight: 600;
     color: #ffffff;
+    padding: 20px;
 }
 
 .resolutionWrapper {
     margin: 0 auto;
-    max-width: 1280px;
+    max-width: 1600px;
     padding: 1px;
 }
 
@@ -111,38 +114,35 @@ a,
 
 header {
     min-height: 100vh;
+    height: auto;
     background-image: url(assets/headerImgs/headerBgMed.jpeg);
     background-position: center;
     background-size: cover;
-    position: relative;
     padding: 1px;
 }
 
 h1 {
-    position: absolute;
-    top: 200px;
-    left: 450px;
+    margin-top: 31vh;
     text-align: center;
 }
 
 .hamburger {
-    position: absolute;
-    top: 0;
-    left: 720px;
     display: none;
 }
 
 .socialMedia {
-    display: block;
-    padding: 170px 0 0 90%;
+    padding-left: 100px;
 }
 
-.socialMedia ul {
+
+.socialMedia li {
     text-align: center;
 }
 
 .socialMedia a {
      font-size: 1.2rem;
+     
+     
 }
 
 
@@ -166,6 +166,10 @@ h1 {
 .aboutUsImg {
     width: 50%;
     float: left;
+}
+
+.aboutUsImgMobSmall {
+    display: none;
 }
 
 .aboutUsText {
@@ -232,9 +236,8 @@ h1 {
 }
 
 .servicesLinks li {
-    font-weight: bold;
     float: left;
-    padding: 40px;
+    
 }
 
 .servicesIcon i {
@@ -245,18 +248,19 @@ h1 {
 
 .servicesLinks a {
     font-size: 1.5rem;
+    font-weight: bold;
+    padding: 40px;
 }
 
 /* 'The Gram' Section */
 
 .theGram {
-    height: 90vh;
-    padding: 30px;
+    padding: 70px;
 }
 
 .theGramTitle {
     text-align: center;
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
 }
 
 .theGramImg {
@@ -268,7 +272,6 @@ h1 {
 /* FOOTER */
 
 footer {
-    height: 50vh;
     background: #222222;
     margin: 0 auto;
     padding: 1px;
@@ -286,33 +289,19 @@ footer h2 {
 
 /* Footer Nav section */
 
-.navFooter {
-    text-align: center;
-}
-
-.navFooter li {
-    padding: 20px;
-}
-
 .navFooter a {
     font-size: 0.9rem;
     text-transform: uppercase;
 }
 
-/* 'Communicate' div */
-
-/* footer .resolutionWrapper {
-    padding: 40px;
-}  */
-
-/* .communicate {
-    width: 100%;
-} */
-
 .contactContainer {
     width: 40%;
     float: left;
-    padding-left: 50px;
+    padding-left: 120px;
+}
+
+.contactContainer p {
+    margin: 0;
 }
 
 .stayUpdatedContainer {
@@ -345,9 +334,7 @@ button {
 .copyrightContainer {
     text-align: center;
     background-color: #000;
-    position: relative;
-    top: 30px;
-    left: -1px;
+   margin-top: 50px;
 }
 
 .copyrightContainer p {
@@ -356,7 +343,8 @@ button {
     font-weight: 600;
     letter-spacing: 1px;
     opacity: 0.5;
-    padding: 5px;
+    padding: 0;
+    margin: 0;
 }
 
 /* MEDIA QUERIES -- Desktop First approach */
@@ -371,30 +359,41 @@ button {
 
 /* Portrait phones and down */
 
-@media(max-width: 480px) {
+@media(max-width: 400px) {
 
     /* General */
 
     .resolutionWrapper {
-        width: 432px;
+        width: 400px;
+    }
+
+    .mobileImage {
+        display: block;
+    }
+
+    .desktopImage {
+        display: none;
     }
 
     /* Header */
 
-
     header {
-        height: 600px;
-        width: 480px;
-        background-image: url(assetsheaderBgMobSmall.jpg);
+        height: 599px;
+        width: 400px;
+        background-image: url(assets/headerImgs/headerBgMobSmall.jpeg);
         background-position: center;
         background-size: cover;
     }
     
     h1 {
-        font-size: 4rem;
+        font-size: 3.75rem;
         text-align: center;
-        position: initial;
-        margin: 190px auto;
+        margin: 190px 0 0 10px;
+    }
+
+    h2 {
+        margin: 0;
+        padding: 0;
     }
 
     .socialMedia,
@@ -403,9 +402,10 @@ button {
     }
 
     .hamburger {
-        display: inline-block;
-        position: initial;
-        margin: 20px 0 0 400px;
+        display: block;
+        position: relative;
+        top: 15px;
+        left: 340px;
     }
 
     /* 'About Us' and 'Our Mission' Section */
@@ -413,19 +413,20 @@ button {
     .aboutUsText,
     .missionText {
         text-align: center;
-        /* padding: 60px; */
+        
     }
     .aboutUsText,
     .aboutUsImg, 
     .missionText,
     .missionImg {
         width: 100%;
+        padding: 20px;
     }
 
-    .aboutUsImg {
-        /* height: 227px; */
+    .aboutUsImg,
+    .missionImg {
+       /* margin: auto; */
     }
-
     /* Blog section */
 
     .blog {
@@ -436,7 +437,7 @@ button {
     .blogText {
         width: 100%;
         margin: auto;
-        padding: 31px;
+        padding: 20px;
         /* padding: 10px; */
     }
 
@@ -445,8 +446,23 @@ button {
     }
 
     .blogImg {
-        width: 90%;
-        /* margin-left: 60px; */
-
+        width: 100%;
+        padding: 10px;
     }
+
+    .blogText a {
+        width: 214px;
+        height: 50px;
+        margin-left: 90px;
+        text-align: center;
+    }
+
+    .services {
+        width: 400px;
+        height: 563px;
+        background-image: url(assets/servicesImgs/ctrySideBgSmall.jpeg);
+        background-position: center;
+        background-size: cover;
+        padding: 1px;
+}
 }

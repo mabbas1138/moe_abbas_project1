@@ -1,24 +1,12 @@
 TO DO
 
-
+> Reconsider using Position Relative on hamburger -- look it up
 
 
 ***DO SRCSET AND ADD MOBILE IMAGES***
 -- https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
 
 
-> Make sure you're not floating <a> (float the <li>)
-
-> Make sure you're styling the links <a>, not the <li>
-
-> style a tags in servicesLinks, not the li (see simple-nav exercise)
-
-
-> **It doesn't matter if list-style: none is on ul or li. But be consistent.
-
-
-
-> Consider taking out .companyName class and just leave as h1
 
 > Use imported numbers for font weight 
 
@@ -26,16 +14,9 @@ TO DO
 
 > Push final to Master
 
+
+ 
 QUESTIONS
-
-> I DIDN'T USE 1600px MAX WIDTH -- HOW TO ACCOUNT FOR IT?
-
-*Recommended usage for margin and padding:
-
-    To style spacing within and around the element, not for page layout or positioning large structural blocks.
-
-    -- Should the following NOT use margin and padding?  
-    1) 
 
 > Should desktop images be Med size files? They exceed the XXXX kb limit. Should I optimize them?
 
