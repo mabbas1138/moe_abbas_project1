@@ -1,5 +1,7 @@
 TO DO
 
+> Rename development2 branch to "responsive design" or something
+
 > HOW DO YOU GET THE BIKE TO SHOW IN MOBILE DESISN SERVICES?
 
 > Reconsider using Position Relative on hamburger -- look it up

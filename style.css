@@ -399,8 +399,9 @@ button {
     /* Blog section */
 
     .blog {
-        padding: 40px;
         margin: 0;
+        padding: 40px;
+        
     }
 
     .blogText {
@@ -417,7 +418,6 @@ button {
 
     .blogImg {
         width: 40%;
-
     }
 
     .blogText a {
@@ -427,6 +427,11 @@ button {
         text-align: center;
     }
 
+    /* Services Section */
+
+    .servicesLinks {
+        margin: 0 auto;
+    }
 
 
 
