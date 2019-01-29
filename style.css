@@ -50,6 +50,7 @@ h1, h2 {
 
 h1 {
     font-size: 6rem;
+    display: inline-block;
 }
 
 h2 {
@@ -122,7 +123,7 @@ header {
 }
 
 h1 {
-    margin-top: 31vh;
+    margin: 31vh;
     text-align: center;
 }
 
@@ -168,7 +169,7 @@ h1 {
     float: left;
 }
 
-.aboutUsImgMobSmall {
+.mobileImage {
     display: none;
 }
 
@@ -349,18 +350,95 @@ button {
     margin: 0;
 }
 
+
+/******/
+
 /* MEDIA QUERIES -- Desktop First approach */
 
 
-
-/* Portrait phone to portrait tablet */
+/* Portrait tablet */
 
 @media(max-width: 1024px) {
-    
-}
+
+    /* General */ 
+
+    .gramImg {
+        display: block;
+    }
+
+    /* Header */
+
+    header {
+        height: 768px;
+        width: 1024px;  
+        background-image: url(assets/headerImgs/headerBgMed.jpeg);
+    }
+
+    .socialMedia li {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    /* About Us section */
+
+    .aboutUsText,
+    .missionText {
+        text-align: center;
+    }
+
+    .aboutUsText,
+    .aboutUsImg, 
+    .missionText,
+    .missionImg {
+        width: 50%;
+        padding: 10px;
+    }
+
+    /* Blog section */
+
+    .blog {
+        padding: 40px;
+        margin: 0;
+    }
+
+    .blogText {
+        width: calc(60% - 10px);
+        margin: auto;
+        padding: 10px;
+        /* padding: 10px; */
+    }
+
+    .blogImg {
+        width: 40%;
+
+    }
+
+    .blogText a {
+        /* width: 214px;
+        height: 50px; */
+        /* margin-left: 90px; */
+        text-align: center;
+    }
+
+
+
+
+
 
 
 /*  */
+
+
+
+
+
+
+
+
+
+
 
 
 /* Portrait phones and down */
@@ -421,8 +499,8 @@ button {
     .aboutUsText,
     .missionText {
         text-align: center;
-        
     }
+
     .aboutUsText,
     .aboutUsImg, 
     .missionText,
@@ -430,6 +508,8 @@ button {
         width: 100%;
         padding: 20px;
     }
+
+    /* Blog section */
 
     .blog {
         padding: 0;
