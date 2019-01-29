@@ -267,6 +267,10 @@ h1 {
     margin-left: 50px;
 }
 
+.gramMobileImg {
+    display: none;
+}
+
 /* FOOTER */
 
 footer {
@@ -365,11 +369,13 @@ button {
         width: 400px;
     }
 
-    .mobileImage {
+    .mobileImage,
+    .gramImg {
         display: block;
     }
 
-    .desktopImage {
+    .desktopImage,
+    .gramImgBeGone {
         display: none;
     }
 
@@ -470,7 +476,13 @@ button {
 
     /* 'The Gram' section */
 
+    .theGramImg {
+        width: 50%;
+        float: none;
+    }
+
     /* ADD MOBILE IMAGES TO HTML GRAM SECTION */
+
     
 
 }
