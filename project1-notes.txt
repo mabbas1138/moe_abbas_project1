@@ -2,6 +2,10 @@ TO DO
 
 > Rename development2 branch to "responsive design" or something
 
+> Move unused images to Unusued Images folder and add to .gitignore file
+
+> Use "git add -A"
+
 > HOW DO YOU GET THE BIKE TO SHOW IN MOBILE DESISN SERVICES?
 
 > Reconsider using Position Relative on hamburger -- look it up
