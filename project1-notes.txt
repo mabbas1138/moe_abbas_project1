@@ -1,34 +1,45 @@
-NOTES TO SELF
-
-> Why Ems? https://css-tricks.com/why-ems/
-
 TO DO
 
-> Put on GitHub
+> Rename development2 branch to "responsive design" or something
+
+> HOW DO YOU GET THE BIKE TO SHOW IN MOBILE DESISN SERVICES?
+
+> Reconsider using Position Relative on hamburger -- look it up
+
+> Check to see if you should use padding on servicesLinks a or li
+
+***DO SRCSET AND ADD MOBILE IMAGES***
+-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
+
+
 
 > Use imported numbers for font weight 
 
-> Use single side border targeting for address in Contact Us
-
 > Leave comments in HTML to justify choices
 
-> Include Apple Touch icons and Favicon for the desktop site. Make sure to add more than one Apple Touch links (see notes)
+> Push final to Master
 
-> Change leadWrapper to leadContainer
 
-> Why does Meet Alissa h2 have margin-bottom: 34px?
-
+ 
 QUESTIONS
 
-> Not sure how to calculate the margins for Gram images:
+> Should desktop images be Med size files? They exceed the XXXX kb limit. Should I optimize them?
 
--- .gramImg {
-    width: calc((100% - 200px) / 3);
-    float: left;
-    margin: 20px;
-}
+> h1 header in mobile gets pushed down when hamburger gets pushed down. It's because of the h1 margins in desktop. Is there a better way?
 
-> I was told by an instructor here that you should group all related sentences under one p tag, rather than breaking them up into their own for stylistic purposes.
+> Should I make the svg hamburger menu inline or as an image?
+
+> How should the header HTML structure be? h1 first, then the navs? Navs first, then the h1?
+
+> Should we be compressing the large photo files? For Desktop, I'm using Med size (without compression)
+
+> Use single side border targeting for address in Contact Us?
+
+> Any other method to use besides margin: -X to remove padding above?
+
+> Are we supposed to reference height values in Zeplin design?
+
+> Not sure how to fix Contact section
 
 ====
 
@@ -68,8 +79,6 @@ CLASS NOTES
 > NUMBER OF WORDS OR SENTENCES/LINE: Don't fuss over it. They just want things to remain proportional to each other
 
 > It's ok to scale font sizes in between for sake of UX -- scale it down according to viewport
-
-> Get icons from Font Awesome
 
 > Accessibility should be covered with these designs. If you have concerns, let Fatima know. 
 

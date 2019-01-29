@@ -4,6 +4,15 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black;
+}
+
 .visuallyhidden:not(:focus):not(:active) {
     position: absolute;
     width: 1px;
@@ -25,11 +34,14 @@ html {
 
 body {
      font-size: 1rem;
+}
 
- }
+.skip-link:focus {
+  left: 0;
+}
 
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
 h1, h2 {
@@ -38,55 +50,32 @@ h1, h2 {
 
 h1 {
     font-size: 6rem;
+    display: inline-block;
 }
 
 h2 {
     font-size: 2.1rem;
 }
 
-p {
-    font-family: "Catamaran", Open Sans;
+ul {
+    margin: 0;
+    padding: 0;
 }
 
-ul {
+li {
     list-style-type: none;
 }
 
-a {
-    font-family: "Catamaran", Open Sans;
-    font-size: 1rem;
-    text-decoration: none;
-}
-
-.lgDisplayWrapper {
-    margin: 0 auto;
-    max-width: 1280px;
-}
-
-.themeColor {
-    color: #f2a11c;
-}
-
+p,
+a,
 .readMore {
     font-family: "Catamaran", Open Sans;
-    font-size: 0.9rem;
-    font-weight: bold;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #f2a11c;
-    background-color: #000;
-    padding: 10px 36px;
-   
 }
 
-/* HEADER */
-
-header {
-    min-height: 100vh;
-    background-image: url(assets/headerBgSmall.jpeg);
-    background-position: center;
-    background-size: cover;
-    padding: 1px;
+.navLinks a,
+.servicesLinks a,
+.readMore {
+    text-decoration: none;
 }
 
 .navLinks {
@@ -94,93 +83,124 @@ header {
 }
 
 .navLinks li {
-    list-style-type: none;
     float: left;
-    padding: 10px;
+    
 }
 
 .navLinks a {
-    color: white;
-    text-decoration: none;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.resolutionWrapper {
+    margin: 0 auto;
+    max-width: 1600px;
+    padding: 1px;
+}
+
+.themeColor {
+    color: #f2a11c;
+}
+
+.readMore {
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #000;
+    padding: 10px 36px;
+}
+
+/* HEADER */
+
+header {
+    min-height: 100vh;
+    height: auto;
+    background-image: url(assets/headerImgs/headerBgMed.jpeg);
+    background-position: center;
+    background-size: cover;
+    padding: 1px;
+}
+
+h1 {
+    margin: 31vh;
+    text-align: center;
+}
+
+.hamburger {
+    display: none;
 }
 
 .socialMedia {
-    display: inline-block;
-    padding-left: 23%;
+    padding-left: 100px;
 }
 
-.socialMedia ul {
-    list-style: none;
+
+.socialMedia li {
     text-align: center;
 }
 
 .socialMedia a {
-    color: #f2a11c;
+     font-size: 1.2rem;
+     
+     
 }
 
-.companyName {
-    display: inline-block;
-    margin: 10% 0 0 30%;
-    text-align: center;
-}
 
 /* MAIN CONTENT */
 
-/* 'About Us' Section */
+/* 'About Us' and 'Mission Statement' Sections */
 
-.aboutUsText {
-    width: 50%;
-    float: left;
-    padding: 60px 60px 60px 90px;
-}
-
-.aboutUsText p {
-    margin-bottom: 5%;
+.aboutUsText p, 
+.missionText p {
     line-height: 30px;
 }
 
+.aboutUsText h2,
+.missionText h2 {
+    margin-bottom: -10px;
+}
+
+/* 'About Us' Section */
+
+.aboutUsText,
 .aboutUsImg {
     width: 50%;
     float: left;
 }
 
-.aboutUsImg img {
-    width: 100%;
+.mobileImage {
+    display: none;
 }
 
+.aboutUsText {
+    padding: 60px 90px;
+}
 
 /* 'Our Mission' Section */
 
 .missionText {
     width: 50%;
     float: right;
-    padding: 80px 80px 80px 70px;
-}
-
-.missionText p {
-    margin-bottom: 5%;
-    line-height: 30px;
+    padding: 60px 90px;
 }
 
 .missionImg {
     width: 50%;
-    float: left;
-}
-
-.missionImg img {
-    width: 100%;
 }
 
 /* Blog Section */
 
 .blog {
     background-color: #f4f4f4;
-    padding: 100px 200px;
+    padding: 100px;
+    margin-top: -5px;
 }
 
 .blogText {
-    width: 80%;
-    float: right;
+    width: calc(75% - 30px);
+    float: left;
+    margin-left: 30px;
 }
 
 .blogText h2 {
@@ -189,23 +209,22 @@ header {
 
 .blogText p {
     line-height: 29px;
+    letter-spacing: 0;
+    margin-top: 15px;
 }
 
 .blogImg {
-    width: 20%;
+    width: 25%;
+    float: left;
+    margin-top: 15px;
 }
-
-.blogImg img {
-    width: 100%;
-}
-
 
 
 /* 'Services' Section */
 
 .services {
-    min-height: 67vh;
-    background-image: url(assets/ctrySideRideSmall.jpeg);
+    min-height: 56vh;
+    background-image: url(assets/servicesImgs/ctrySideBgMed.jpeg);
     background-position: center;
     background-size: cover;
     padding: 1px;
@@ -213,49 +232,57 @@ header {
 
 .servicesLinks {
     text-align: center;
-    height: 50vh;
+    margin: 22vh 0 0 400px;
 }
 
 .servicesLinks li {
+    float: left;
+}
+
+.servicesIcon i {
+    color: #f4f4f4;
+    font-size: 2rem;
+    padding-bottom: 10px;
+}
+
+.servicesLinks a {
+    font-size: 1.5rem;
     font-weight: bold;
-    float: left;
-}
-
-.servicesLinks ul {
-    margin: 0 auto;
-}
-
-.icon i {
-    float: left;
-    color: white;
+    padding: 40px;
 }
 
 /* 'The Gram' Section */
 
-.gramContainer h2 {
-    text-align: center;
+.theGram {
+    padding: 70px;
 }
 
-.gramImg {
+.theGramTitle {
+    text-align: center;
+    /* margin-bottom: 60px; */
+}
+
+.theGramImg {
     width: calc((100% - 200px) / 3);
     float: left;
-    margin: 20px;
+    margin-left: 50px;
 }
 
-.gramImg img {
-    width: 100%;
+.gramMobileImg {
+    display: none;
 }
-
 
 /* FOOTER */
 
 footer {
- background: #222222;
- padding: 1px;
+    background: #222222;
+    margin: 0 auto;
+    padding: 1px;
+ 
 }
 
 footer p {
-    color: white; 
+    color: #ffffff;
     font-size: 1rem;
 }
 
@@ -266,47 +293,339 @@ footer h2 {
 /* Footer Nav section */
 
 .navFooter a {
+    font-size: 0.9rem;
     text-transform: uppercase;
 }
 
-/* 'Communicate' div */
-
-.communicate {
-    /* float: left; */
-    width: 100%;
-}
-
 .contactContainer {
-    width: 25%;
+    width: 40%;
     float: left;
-    padding-left: 48px;
+    padding-left: 120px;
 }
 
-.contactContainer {
-    /* padding-right: 50px; */
+.contactContainer p {
+    margin: 0;
 }
 
 .stayUpdatedContainer {
-    width: 40%;
+    width: 60%;
     float: left;
-   margin-left: 300px;
+    padding-left: 130px;
     
 }   
+
+input[type="email"] {
+    font-family: "Catamaran", Open Sans;
+    color: #232323;
+    width: 432px;
+    height: 50px;
+    padding-left: 30px;
+}
+
+button {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #232323;
+    background-color: #f2a11c;
+    padding: 15px 30px;
+    border: none;
+}
+
 /* 'Copyright' section */
 
 .copyrightContainer {
-    background: #000;
-    width: 100%;
-    padding: 10px;
+    text-align: center;
+    background-color: #000;
+    margin-top: 50px;
 }
 
 .copyrightContainer p {
     font-size: 0.9rem;
+    font: #4a4a4a;
     font-weight: 600;
+    letter-spacing: 1px;
     opacity: 0.5;
-    margin: auto;
-    text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
 
+/******/
 
+/* MEDIA QUERIES -- Desktop First approach */
+
+
+/* Portrait tablet */
+
+@media(max-width: 1024px) {
+
+    /* General */ 
+
+    .gramImg {
+        display: block;
+    }
+
+    /* Header */
+
+    header {
+        height: 768px;
+        width: 1024px;  
+        background-image: url(assets/headerImgs/headerBgMed.jpeg);
+    }
+
+    .socialMedia li {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    /* About Us section */
+
+    .aboutUsText,
+    .missionText {
+        text-align: center;
+    }
+
+    .aboutUsText,
+    .aboutUsImg, 
+    .missionText,
+    .missionImg {
+        width: 50%;
+        padding: 10px;
+    }
+
+    /* Blog section */
+
+    .blog {
+        margin: 0;
+        padding: 40px;
+        
+    }
+
+    .blogText {
+        width: 60%;
+        margin: auto;
+        padding-left: 20px;
+        line-height: 5px;
+        /* padding: 10px; */
+    }
+
+    .blogText h2 {
+        margin-top: 32px;
+    }
+
+    .blogImg {
+        width: 40%;
+    }
+
+    .blogText a {
+        /* width: 214px;
+        height: 50px; */
+        /* margin-left: 90px; */
+        text-align: center;
+    }
+
+    /* Services Section */
+
+    .servicesLinks {
+        margin: 0 auto;
+    }
+
+
+
+
+
+
+/*  */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Portrait phones and down */
+
+@media(max-width: 400px) {
+
+    /* General */
+
+    .resolutionWrapper {
+        width: 400px;
+    }
+
+    .mobileImage,
+    .gramImg {
+        display: block;
+    }
+
+    .desktopImage,
+    .gramImgBeGone {
+        display: none;
+    }
+
+    /* Header */
+
+    header {
+        height: 599px;
+        width: 400px;
+        background-image: url(assets/headerImgs/headerBgMobSmall.jpeg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    h1 {
+        font-size: 3.75rem;
+        text-align: center;
+        margin: 190px 0 0 10px;
+    }
+
+    h2 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .socialMedia,
+    .navLinks {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        position: relative;
+        top: 15px;
+        left: 340px;
+    }
+
+    /* 'About Us' and 'Our Mission' Section */
+    
+    .aboutUsText,
+    .missionText {
+        text-align: center;
+    }
+
+    .aboutUsText,
+    .aboutUsImg, 
+    .missionText,
+    .missionImg {
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* Blog section */
+
+    .blog {
+        padding: 0;
+        margin: 0;
+    }
+
+    .blogText {
+        width: 100%;
+        margin: auto;
+        padding: 20px;
+        /* padding: 10px; */
+    }
+
+    .blogText h2 {
+        text-align: center;
+    }
+
+    .blogImg {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .blogText a {
+        width: 214px;
+        height: 50px;
+        margin-left: 90px;
+        text-align: center;
+    }
+
+    /* Services Section */
+
+    .services {
+        width: 400px;
+        height: 563px;
+        background-image: url(assets/servicesImgs/ctrySideBgMed.jpeg);
+        background-position: -1000px 0;
+    
+    }
+
+    .servicesLinks {
+        margin: 0;
+    }
+
+    .servicesLinks li {
+        float: none;
+        margin-top: 60px;
+    }
+
+    /* 'The Gram' section */
+
+    .theGram {
+        padding: 0;
+    }
+
+    .theGramImg {
+        width: 50%;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .theGramTitle {
+        padding: 40px;
+    }
+
+    /* FOOTER */
+
+    .navFooter {
+        
+    }
+
+    .contactContainer {
+        width: 100%;
+        float: none;
+        padding: 60px;
+        text-align: center;
+    }
+
+    .stayUpdatedContainer {
+        width: 100%;
+        float: none;
+        margin-top: -30px;
+        padding: 0;
+        text-align: center;
+    }
+
+    input[type="email"] {
+        width: 90%;
+        text-align: center;
+        padding-left: 0;
+        margin: 5px 17px;
+    }
+
+    button {
+        text-align: center;
+        width: 90%;
+        margin: 5px 17px;
+    }
+
+    /* Copyright section */
+
+    .copyrightContainer {
+        padding: 10px;
+    }
+    
+
+    
+
+    }
+}

@@ -1,3 +1,7 @@
+<!-- NOTES -->
+<!-- Images: For desktop, I sometimes used "small" images since their file sizes are within the recommended XXXX kb limit -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,98 +16,112 @@
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
+    <a href="#mainContent" class="skip-link">Skip to main content.</a>
+    
     <header>
-        <div class="lgDisplayWrapper clearfix">
-            <nav class="nav">
-                <ul class="navLinks clearfix">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+        <div class="resolutionWrapper">
+        <nav class="navHome">
+            <img src="assets/hamburger-menu.svg" class="hamburger">
+            <ul class="navLinks clearfix">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
 
-            <h1 class="themeColor companyName">Bikerland</h1>
-            
-            <nav class="socialMedia">
-                <ul>
-                    <li>
-                        <a href="#" aria-label="Go to Bikerland's Instagram page"><i aria-hidden class="fab fa-instagram"></i><span class="visuallyhidden">Instagram</span></a>
-                    </li>
-                    <li>
-                        <a href="#" aria-label="Go to Bikerland's Facebook page"><i aria-hidden class="fab fa-facebook-f"></i><span class="visuallyhidden">Facebook</span></a>
-                    </li>
-                    <li><a href="#" aria-label="Go to Bikerland's Snapchat feed"><i aria-hidden class="fab fa-snapchat-ghost"></i><span class="visuallyhidden">Snapchat</span></a>
-                    </li>
-                    <li><a href="#" aria-label="Go to Bikerland's Twitter feed"><i aria-hidden class="fab fa-twitter"></i><span class="visuallyhidden">Twitter</span></a>
-                    </li>
-                </ul>
-            </nav>    
+        <h1 class="themeColor">Bikerland</h1>
+
+        <nav class="socialMedia">
+            <ul>
+                <li>
+                    <a href="#" aria-label="Go to Bikerland's Instagram page"><i aria-hidden class="themeColor fab fa-instagram"></i><span
+                            class="visuallyhidden">Instagram</span></a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Go to Bikerland's Facebook page"><i aria-hidden class="themeColor fab fa-facebook-f"></i><span
+                            class="visuallyhidden">Facebook</span></a>
+                </li>
+                <li><a href="#" aria-label="Go to Bikerland's Snapchat feed"><i aria-hidden class="themeColor fab fa-snapchat-ghost"></i><span
+                            class="visuallyhidden">Snapchat</span></a>
+                </li>
+                <li><a href="#" aria-label="Go to Bikerland's Twitter feed"><i aria-hidden class="themeColor fab fa-twitter"></i><span
+                            class="visuallyhidden">Twitter</span></a>
+                </li>
+            </ul>
+        </nav>
         </div>
     </header>
 
-    <main>
+    <main id="mainContent">
         <section class="aboutUsMainContainer clearfix">
+            <div class="resolutionWrapper">
+            <img src="./assets/aboutUsImgs/footPedalMobSmall.jpeg" class="mobileImage" alt="Black and white close-up on a cyclist's foot pedalling" title="Black and white close-up on a cyclist's foot pedalling">
             <div class="aboutUsText clearfix">
                 <h2>About Us</h2>
                 <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla pulvinar tortor a elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus. Vestibulum vitae tincidunt sem, a blandit sem. Quisque interdum orci.
                 </p>
-                <a href="#" class="readMore">Read More</a>
+                <a href="#" class="themeColor readMore">Read More</a>
             </div>
             <div class="aboutUsImg clearfix">
-                <img src="./assets/footPedalSmall.jpeg" alt="Black and white close-up on a cyclist's foot pedalling" title="Black and white close-up on a cyclist's foot pedalling">
+                <img src="./assets/aboutUsImgs/footPedalMed.jpeg" class="desktopImage" alt="Black and white close-up on a cyclist's foot pedalling" title="Black and white close-up on a cyclist's foot pedalling">
+            </div>
             </div>
         </section>
-
+    
         <section class="missionMainContainer clearfix">
+            <div class="resolutionWrapper">
+            <img src="./assets/ourMissionImgs/blkBikeMobSmall.jpeg" class="mobileImage" alt="A model of a black bike on display" title="A model of a black bike on display">
             <div class="missionText clearfix">
                 <h2>Our Mission</h2>
                 <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla pulvinar tortor a elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus. Vestibulum vitae tincidunt sem, a blandit sem. Quisque interdum orci.
                 </p>
-                <a href="" class="readMore">Read More</a>
+                <a href="" class="themeColor readMore">Read More</a>
             </div>
             <div class="missionImg clearfix">
-                <img src="./assets/blkBikeSmall.jpeg" alt="A model of a black bike on display" title="A model of a black bike on display">
+                <img src="./assets/ourMissionImgs/blkBikeSmall.jpeg" class="desktopImage" alt="A model of a black bike on display" title="A model of a black bike on display">
+            </div>
             </div>
         </section>
+        
 
-        <section class="blog clearfix">
-            <div class="lgDisplayWrapper clearfix">
-            <div class="blogText">
-                <h2>Meet Alissa</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum
-                consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor.Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat
-                vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor.Lorem ipsum dolor
-                sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla el. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend.</p>
-                <a href="readMore.html" class="readMore">Read More</a>
-            </div>
-            <div class="blogImg">
-                <img src="./assets/alissaMed.jpeg" alt="Cyclist Alissa riding through the street" title="Cyclist Alissa riding through the street">
-            </div>
+        <section class="blog">
+            <div class="resolutionWrapper clearfix">
+                <div class="blogImg">
+                    <img src="./assets/blogImgs/alissaMed.jpeg" alt="Cyclist Alissa riding through the street" title="Cyclist Alissa riding through the street">
+                </div>
+                <div class="blogText">
+                    <h2>Meet Alissa</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum
+                    consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor. Lorem
+                    ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat
+                    vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor. Lorem ipsum dolor
+                    sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla el. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend.</p>
+                    <a href="readMore.html" class="themeColor readMore">Read More</a>
+                </div>
             </div>
         </section>
     </main>
 
         <section class="services">
-            <div class="lgDisplayWrapper">
-            <nav class="servicesLinks">
+            <div class="resolutionWrapper clearfix">
+            <nav class="servicesLinks clearfix">
                 <ul class="clearfix">
-                    <li class="products">
-                        <div class="icon clearfix">
+                    <li class="service">
+                        <div class="servicesIcon">
                             <i class="fas fa-bicycle"></i>
                         </div>
                         <a href="products.html" class="themeColor">Products</a>
                     </li>
                     <li class="community">
-                        <div class="icon clearfix">
-                            <i class="fas fa-user"></i>
+                        <div class="servicesIcon">
+                            <i class="fas fa-users"></i>
                         </div>
                         <a href="community.html" class="themeColor">Community</a>
                     </li>
                     <li class="reachOut">
-                        <div class="icon clearfix">
+                        <div class="servicesIcon">
                             <i class="fas fa-phone"></i>
                         </div>
                         <a href="reachOut.html" class="themeColor">Reach out</a>
@@ -111,27 +129,33 @@
                 </ul>
             </nav>
             </div>
+    
         </section>
 
-        <section class="lgDisplayWrapper gramContainer clearfix">
+        <section class="theGram">
+            <div class="theGramTitle">
                 <h2>The Gram</h2>
+            </div>
+            <div class="resolutionWrapper">
                 <div class="gramImagesContainer clearfix">
-                    <div class="gramImg">
-                        <img src="assets/orangeHelmetSmall.jpeg" class="gramImg" alt="cyclist with orange helmet rides on street" title="cyclist with orange helmet rides on street">
+                    <div class="theGramImg">
+                        <img src="assets/theGramImgs/orangeHelmetMobMed.jpeg" class="gramMobileImg" alt="cyclist with orange helmet rides on street" title="cyclist with orange helmet rides on street">
+                        <img src="assets/theGramImgs/orangeHelmetMed.jpeg" class="gramImg" alt="cyclist with orange helmet rides on street" title="cyclist with orange helmet rides on street">
                     </div>
-                    <div class="gramImg">
-                        <img src="assets/proCyclistMed.jpeg" class="gramImg" alt="crowd watches competitive cyclist passing by" title="crowd watches competitive cyclist passing by">
+                    <div class="theGramImg">
+                        <img src="assets/theGramImgs/proCyclistMobLg.jpg" class="gramMobileImg" alt="crowd watches competitive cyclist passing by" title="crowd watches competitive cyclist passing by">
+                        <img src="assets/theGramImgs/proCyclistMed.jpeg" class="gramImg" alt="crowd watches competitive cyclist passing by" title="crowd watches competitive cyclist passing by">
                     </div>
-                    <div class="gramImg">
-                        <img src="assets/singleGearMed.jpeg" class="gramImg" alt="single-gear bike resting against house exterior" title="single-gear bike resting against house exterior">
+                    <div class="theGramImg">
+                        <img src="assets/theGramImgs/singleGearMed.jpeg" class="gramImg gramImgBeGone" alt="single-gear bike resting against house exterior" title="single-gear bike resting against house exterior">
                     </div>
                 </div>
             </div>
+
         </section>
   
-
     <footer>
-        <div class="lgDisplayWrapper clearfix">
+        <div class="resolutionWrapper clearfix">
             <nav class="navFooter">
                 <ul class="navLinks clearfix">
                     <li><a href="#home">Home</a></li>
@@ -140,25 +164,24 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <div class="communicate">
+            <div class="communicate clearfix">
                 <div class="contactContainer">
                     <h2 class="themeColor">Contact</h2>
-                    <p>info@email.com | 123 - 456 - 7890
-                    123 some road, Toronto, ON
-                    A5A 5A5, Canada
-                    </p>
+                    <p>info@email.com | 123 - 456 - 7890</p>
+                    <p>123 some road, Toronto, ON</p>
+                    <p>A5A 5A5, Canada</p>
                 </div>
             
                 <div class="stayUpdatedContainer">
                     <h2 class="themeColor">Stay updated</h2>
                     <p>Subscribe to your newsletter to stay updated.
                     </p>
-                    <input type="text" class="emailAddress" placeholder="email address">
-                    <button class="subscribe">Subscribe</button>
+                    <label for="email" class="visuallyhidden">Email</label>
+                    <input type="email" name="email" class="emailAddress" placeholder="email address">
+                    <button type="submit">Subscribe</button>
                 </div>
             </div>
         </div>
-
         <div class="copyrightContainer">
             <p>Copyright &copy; 2019 HackerYou</p>
         </div>
