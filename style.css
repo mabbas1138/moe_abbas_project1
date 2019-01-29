@@ -336,7 +336,7 @@ button {
 .copyrightContainer {
     text-align: center;
     background-color: #000;
-   margin-top: 50px;
+    margin-top: 50px;
 }
 
 .copyrightContainer p {
@@ -354,6 +354,10 @@ button {
 
 
 /* Portrait phone to portrait tablet */
+
+@media(max-width: 1024px) {
+    
+}
 
 
 /*  */
@@ -476,12 +480,60 @@ button {
 
     /* 'The Gram' section */
 
-    .theGramImg {
-        width: 50%;
-        float: none;
+    .theGram {
+        padding: 0;
     }
 
-    /* ADD MOBILE IMAGES TO HTML GRAM SECTION */
+    .theGramImg {
+        width: 50%;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .theGramTitle {
+        padding: 40px;
+    }
+
+    /* FOOTER */
+
+    .navFooter {
+        
+    }
+
+    .contactContainer {
+        width: 100%;
+        float: none;
+        padding: 60px;
+        text-align: center;
+    }
+
+    .stayUpdatedContainer {
+        width: 100%;
+        float: none;
+        margin-top: -30px;
+        padding: 0;
+        text-align: center;
+    }
+
+    input[type="email"] {
+        width: 90%;
+        text-align: center;
+        padding-left: 0;
+        margin: 5px 17px;
+    }
+
+    button {
+        text-align: center;
+        width: 90%;
+        margin: 5px 17px;
+    }
+
+    /* Copyright section */
+
+    .copyrightContainer {
+        padding: 10px;
+    }
+    
 
     
 
