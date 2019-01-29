@@ -404,10 +404,15 @@ button {
     }
 
     .blogText {
-        width: calc(60% - 10px);
+        width: 60%;
         margin: auto;
-        padding: 10px;
+        padding-left: 20px;
+        line-height: 5px;
         /* padding: 10px; */
+    }
+
+    .blogText h2 {
+        margin-top: 32px;
     }
 
     .blogImg {
