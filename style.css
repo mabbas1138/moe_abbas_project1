@@ -26,11 +26,11 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
     overflow: hidden;
  }
 
- /* GENERAL STYLES  */
+ /* General Styles  */
 
 html {
     font-size: 125%;
- }
+}
 
 body {
      font-size: 1rem;
@@ -65,6 +65,7 @@ p,
 a,
 .readMore {
     font-family: "Catamaran", Open Sans;
+
 }
 
 .navLinks a,
@@ -79,7 +80,6 @@ a,
 
 .navLinks li {
     float: left;
-    
 }
 
 .navLinks a {
@@ -101,16 +101,17 @@ a,
 
 .readMore {
     font-size: 0.9rem;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
     background-color: #000;
     padding: 10px 36px;
 }
 
-/* HEADER */
+/* Header */
 
 header {
     min-height: 100vh;
+    max-width: 100%;
     height: auto;
     background-image: url(assets/headerImgs/headerBgMed.jpeg);
     background-position: center;
@@ -121,12 +122,16 @@ header {
 
 h1 {
     font-size: 6rem;
-    margin: 250px auto 0 auto;
+    margin: 230px auto 0 auto;
     text-align: center;
 }
 
 .hamburger {
     display: none;
+}
+
+.navHome .navLinks {
+    padding-top: 20px;
 }
 
 .socialMedia {
@@ -142,8 +147,6 @@ h1 {
 .socialMedia a {
      font-size: 1.2rem;
 }
-
-/* MAIN CONTENT */
 
 /* 'About Us' and 'Mission Statement' Sections */
 
@@ -242,7 +245,7 @@ h1 {
 
 .servicesLinks a {
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: 600;
     padding: 40px;
 }
 
@@ -254,7 +257,6 @@ h1 {
 
 .theGramTitle {
     text-align: center;
-    /* margin-bottom: 60px; */
 }
 
 .theGramImg {
@@ -267,25 +269,27 @@ h1 {
     display: none;
 }
 
-/* FOOTER */
+/* Footer */
 
 footer {
     background: #222222;
     margin: 0 auto;
     padding: 1px;
- 
 }
 
 footer p {
-    color: #ffffff;
     font-size: 1rem;
+    color: #ffffff;
+    font-weight: 300;
 }
 
 footer h2 {
     font-size: 1.25rem;
 }
 
-/* Footer Nav section */
+.navFooter {
+    padding-top: 60px;
+}
 
 .navFooter a {
     font-size: 0.9rem;
@@ -327,10 +331,7 @@ button {
     background-color: #f2a11c;
     float: left;
     padding: 15px 15px;
-    
 }
-
-/* 'Copyright' section */
 
 .copyrightContainer {
     text-align: center;
@@ -349,157 +350,19 @@ button {
 }
 
 
-/******/
 
-/* MEDIA QUERIES -- Desktop First approach */
-
-
-/* Portrait tablet */
-
-@media(max-width: 1024px) {
-
-    /* General */ 
-
-    .gramImg {
-        display: block;
-    }
-
-    /* Header */
-
-    header {
-        height: 768px;
-        width: 1024px;  
-        background-image: url(assets/headerImgs/headerBgMed.jpeg);
-    }
-
-    /* About Us section */
-
-    .aboutUsText,
-    .missionText {
-        text-align: center;
-    }
-
-    .aboutUsText,
-    .aboutUsImg, 
-    .missionText,
-    .missionImg {
-        width: 50%;
-        padding: 10px;
-    }
-
-    /* Blog section */
-
-    .blog {
-        margin: 0;
-        padding: 20px;
-        
-    }
-
-    .blogText {
-        width: 60%;
-        margin: auto;
-        padding-left: 30px;
-        line-height: 10px;
-        /* padding: 10px; */
-    }
-
-    .blogText h2 {
-        padding-bottom: 12px;
-        margin-top: 30px;
-    }
-
-    .blogImg {
-        width: 40%;
-    }
-
-    .blogText a {
-        /* width: 214px;
-        height: 50px; */
-        /* margin-left: 90px; */
-        text-align: center;
-    }
-
-    /* 'Services' Section */
-
-    .servicesLinks {
-        margin-left: 200px;
-    }
-
-    /* 'The Gram' section */
-
-    .theGram {
-        padding: 20px;
-    }
-
-    .theGramImg {
-        width: 33.3%;
-        margin: 0;
-        padding: 10px 20px 50px 20px;
-    }
-
-    /* FOOTER */
-
-    /* Footer Nav section */
-
-    .navFooter {
-        margin-right: 150px;
-        padding-top: 60px;
-    }
-   
-    .contactContainer {
-        width: 40%;
-        float: left;
-        padding: 20px 0 0 50px;
-    }
-
-    .stayUpdatedContainer {
-        width: 60%;
-        float: left;
-        padding: 20px 0 0 100px; 
-    }   
-
-    input[type="email"] {
-        font-family: "Catamaran", Open Sans;
-        color: #232323;
-        width: 300px;
-        height: 50px;
-        padding-left: 30px;
-    }   
-
-    button {
-        width: 30%;
-        float: left;
-    }
+/******************************/
+/*******  MEDIA QUERIES *******/
+/******************************/
 
 
 
-
-
-
-
-
-
-/*  */
-
-
-
-
-
-
-
-
-
-
-
-
-/* Portrait phones and down */
-
-@media(max-width: 400px) {
+@media(min-width: 400px) and (max-width: 768px){
 
     /* General */
 
     .resolutionWrapper {
-        width: 400px;
+        width: auto;
     }
 
     .mobileImage,
@@ -516,7 +379,7 @@ button {
 
     header {
         height: 599px;
-        width: 400px;
+        width: auto;
         background-image: url(assets/headerImgs/headerBgMobSmall.jpeg);
         background-position: center;
         background-size: cover;
@@ -525,7 +388,7 @@ button {
     h1 {
         font-size: 3.75rem;
         text-align: center;
-        margin: 190px 0 0 10px;
+        margin-top: 180px;
     }
 
     h2 {
@@ -542,11 +405,14 @@ button {
         display: block;
         position: relative;
         top: 15px;
-        left: 340px;
+        left: 350px;
     }
 
     /* 'About Us' and 'Our Mission' Section */
     
+    .aboutUsMainContainer {
+        width: auto;
+    }
     .aboutUsText,
     .missionText {
         text-align: center;
@@ -556,34 +422,33 @@ button {
     .aboutUsImg, 
     .missionText,
     .missionImg {
-        width: 100%;
+        width: auto;
         padding: 20px;
     }
 
     /* Blog section */
 
     .blog {
-        padding: 0;
-        margin: 0;  
-        width: 400px;
+        width: auto;
         height: 1043px;
+        margin: 0; 
+        padding: 0;
     }
 
     .blogText {
         width: 100%;
         margin: auto;
-        padding: 10px;
+        padding: 5px;
     }
 
     .blogText h2 {
         text-align: center;
-        padding-bottom: 30px;
+        padding-bottom: 10px;
     }
 
     .blogText p {
-        padding-bottom: 20px;
+        padding: 0 0 0px 5px;
     }
-
 
     .blogImg {
         width: 100%;
@@ -593,15 +458,15 @@ button {
     .blogText a {
         width: 214px;
         height: 50px;
+        text-align: center;
         padding: 10px 50px;
         margin-left: 80px;
-        text-align: center;
     }
 
     /* Services Section */
 
     .services {
-        width: 400px;
+        width: auto;
         height: 563px;
         background-image: url(assets/servicesImgs/ctrySideBgMed.jpeg);
         background-position: -1000px 0;
@@ -632,28 +497,27 @@ button {
         padding: 40px;
     }
 
-    /* FOOTER */
+    /* Footer */
 
     .navFooter {
-        margin: 0;
-        padding: 0;
         padding-top: 60px;
     }
 
     .navFooter .navLinks {
-        display: inline-block;
+        display: block;
+        text-align: center;
         padding: 0;
     }
 
     .contactContainer {
-        width: 100%;
+        width: auto;
         float: none;
         padding: 40px;
         text-align: center;
     }
 
     .stayUpdatedContainer {
-        width: 100%;
+        width: auto;
         float: none;
         margin-top: -30px;
         padding: 0;
@@ -678,11 +542,110 @@ button {
     /* Copyright section */
 
     .copyrightContainer {
-        padding: 10px;
-    }
-    
-
-    
-
+        padding: 5px;
     }
 }
+
+@media(min-width: 769px) and (max-width: 1280px) {
+
+    /* Header */
+
+    header {
+        background-image: url(assets/headerImgs/headerBgMed.jpeg);
+    }
+
+    /* 'About Us' and 'Our Mission' section */
+
+    .aboutUsText,
+    .missionText {
+        text-align: center;
+    }
+
+    .aboutUsText, 
+    .missionText {
+        width: 50%;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* 'Blog' section */
+
+    .blog {
+        margin: 0;
+        padding: 20px;
+    }
+
+    .blogText {
+        width: 60%;
+        line-height: 10px;
+        margin: auto;
+        padding-left: 30px;
+    }
+
+    .blogText h2 {
+        margin-top: 30px;
+        padding-bottom: 12px;
+    }
+
+    .blogImg {
+        width: 40%;
+    }
+
+    .blogText a {
+        text-align: center;
+    }
+
+    /* 'Services' Section */
+
+    .servicesLinks {
+        margin-left: 200px;
+    }
+
+    /* 'The Gram' section */
+
+    .theGram {
+        padding: 20px;
+    }
+
+    .theGramImg {
+        width: 33.3%;
+        margin: 0;
+        padding: 10px 20px 50px 20px;
+    }
+
+    /* Footer */
+
+    .navFooter {
+        margin-right: 150px;
+        padding-top: 60px;
+    }
+   
+    .contactContainer {
+        width: 40%;
+        float: left;
+        padding: 20px 0 0 50px;
+    }
+
+    .stayUpdatedContainer {
+        width: 60%;
+        float: left;
+        padding: 20px 0 0 100px; 
+    }   
+
+    input[type="email"] {
+        font-family: "Catamaran", Open Sans;
+        color: #232323;
+        width: 300px;
+        height: 50px;
+        padding-left: 30px;
+    }   
+
+    button {
+        width: 30%;
+        float: left;
+    }
+}
+
+
+/* THE END */
+/* THANK YOU FOR READING MY CODE */

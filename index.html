@@ -1,5 +1,6 @@
 <!-- NOTES -->
-<!-- Images: For desktop, I sometimes used "small" images since their file sizes are within the recommended XXXX kb limit -->
+<!-- I wasn't sure what constituted "main content" on this site, since 'About Us' and 'Mission Statement' pages aren't typically considered so. 
+I decided to end the main content after blog, although I would argue that the 'Services' and 'Blog' sections would be viewed as 'Main' on a normal site.  -->
 
 
 <!DOCTYPE html>
@@ -12,16 +13,16 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Catamaran:300,400,600,700|Pacifico" rel="stylesheet">
-    <link rel="icon" type="image/png" href="assets/bikeFavicon2.png" sizes="128x128">
+    <link rel="icon" type="image/png" href="assets/icons/bikeFavicon2.png" sizes="128x128">
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
     <a href="#mainContent" class="skip-link">Skip to main content.</a>
-    
+
     <header>
         <div class="resolutionWrapper">
         <nav class="navHome">
-            <img src="assets/hamburgerMenu.svg" class="hamburger">
+            <img src="assets/icons/hamburgerMenu.svg" class="hamburger">
             <ul class="navLinks clearfix">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -56,12 +57,12 @@
     <main id="mainContent">
         <section class="aboutUsMainContainer clearfix">
             <div class="resolutionWrapper">
-            <img src="./assets/aboutUsImgs/footPedalMobSmall.jpeg" class="mobileImage" alt="Black and white close-up on a cyclist's foot pedalling" title="Black and white close-up on a cyclist's foot pedalling">
+            <img src="./assets/aboutUsImgs/footPedalMobMed.jpeg" class="mobileImage" alt="Black and white close-up on a cyclist's foot pedalling" title="Black and white close-up on a cyclist's foot pedalling">
             <div class="aboutUsText clearfix">
                 <h2>About Us</h2>
                 <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla pulvinar tortor a elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus. Vestibulum vitae tincidunt sem, a blandit sem. Quisque interdum orci.
                 </p>
-                <a href="#" class="themeColor readMore">Read More</a>
+                <a href="https://bit.ly/2KpieLj" class="themeColor readMore">Read More</a>
             </div>
             <div class="aboutUsImg clearfix">
                 <img src="./assets/aboutUsImgs/footPedalMed.jpeg" class="desktopImage" alt="Black and white close-up on a cyclist's foot pedalling" title="Black and white close-up on a cyclist's foot pedalling">
@@ -71,20 +72,19 @@
     
         <section class="missionMainContainer clearfix">
             <div class="resolutionWrapper">
-            <img src="./assets/ourMissionImgs/blkBikeMobSmall.jpeg" class="mobileImage" alt="A model of a black bike on display" title="A model of a black bike on display">
+            <img src="./assets/ourMissionImgs/blkBikeMobMed.jpeg" class="mobileImage" alt="A model of a black bike on display" title="A model of a black bike on display">
             <div class="missionText clearfix">
                 <h2>Our Mission</h2>
                 <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla pulvinar tortor a elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus. Vestibulum vitae tincidunt sem, a blandit sem. Quisque interdum orci.
                 </p>
-                <a href="" class="themeColor readMore">Read More</a>
+                <a href="https://bit.ly/2RWUORw" class="themeColor readMore">Read More</a>
             </div>
             <div class="missionImg clearfix">
-                <img src="./assets/ourMissionImgs/blkBikeSmall.jpeg" class="desktopImage" alt="A model of a black bike on display" title="A model of a black bike on display">
+                <img src="./assets/ourMissionImgs/blkBikeMed.jpeg" class="desktopImage" alt="A model of a black bike on display" title="A model of a black bike on display">
             </div>
             </div>
         </section>
         
-
         <section class="blog">
             <div class="resolutionWrapper clearfix">
                 <div class="blogImg">
@@ -98,61 +98,60 @@
                     vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor. Lorem ipsum dolor
                     sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla el. Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend.</p>
-                    <a href="readMore.html" class="themeColor readMore">Read More</a>
+                    <a href="https://bit.ly/2Sg9cU2" class="themeColor readMore">Read More</a>
                 </div>
             </div>
         </section>
     </main>
 
-        <section class="services">
-            <div class="resolutionWrapper clearfix">
-            <nav class="servicesLinks clearfix">
-                <ul class="clearfix">
-                    <li class="service">
-                        <div class="servicesIcon">
-                            <i class="fas fa-bicycle"></i>
-                        </div>
-                        <a href="products.html" class="themeColor">Products</a>
-                    </li>
-                    <li class="community">
-                        <div class="servicesIcon">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <a href="community.html" class="themeColor">Community</a>
-                    </li>
-                    <li class="reachOut">
-                        <div class="servicesIcon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <a href="reachOut.html" class="themeColor">Reach out</a>
-                    </li>
-                </ul>
-            </nav>
-            </div>
-    
-        </section>
+    <section class="services">
+        <div class="resolutionWrapper clearfix">
+        <nav class="servicesLinks clearfix">
+            <ul class="clearfix">
+                <li class="service">
+                    <div class="servicesIcon">
+                        <i class="fas fa-bicycle"></i>
+                    </div>
+                    <a href="https://bit.ly/2Sfyf9P" class="themeColor">Products</a>
+                </li>
+                <li class="community">
+                    <div class="servicesIcon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <a href="https://bit.ly/1T2xIzn" class="themeColor">Community</a>
+                </li>
+                <li class="reachOut">
+                    <div class="servicesIcon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <a href="https://bit.ly/1ed1ikA" class="themeColor">Reach out</a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+    </section>
 
-        <section class="theGram">
-            <div class="theGramTitle">
-                <h2>The Gram</h2>
-            </div>
-            <div class="resolutionWrapper">
-                <div class="gramImagesContainer clearfix">
-                    <div class="theGramImg">
-                        <img src="assets/theGramImgs/orangeHelmetMobMed.jpeg" class="gramMobileImg" alt="cyclist with orange helmet rides on street" title="cyclist with orange helmet rides on street">
-                        <img src="assets/theGramImgs/orangeHelmetMed.jpeg" class="gramImg" alt="cyclist with orange helmet rides on street" title="cyclist with orange helmet rides on street">
-                    </div>
-                    <div class="theGramImg">
-                        <img src="assets/theGramImgs/proCyclistMobLg.jpg" class="gramMobileImg" alt="crowd watches competitive cyclist passing by" title="crowd watches competitive cyclist passing by">
-                        <img src="assets/theGramImgs/proCyclistMed.jpeg" class="gramImg" alt="crowd watches competitive cyclist passing by" title="crowd watches competitive cyclist passing by">
-                    </div>
-                    <div class="theGramImg">
-                        <img src="assets/theGramImgs/singleGearMed.jpeg" class="gramImg gramImgBeGone" alt="single-gear bike resting against house exterior" title="single-gear bike resting against house exterior">
-                    </div>
+    <section class="theGram">
+        <div class="resolutionWrapper">
+        <div class="theGramTitle">
+            <h2>The Gram</h2>
+        </div>
+        
+            <div class="gramImagesContainer clearfix">
+                <div class="theGramImg">
+                    <img src="assets/theGramImgs/orangeHelmetMobMed.jpeg" class="gramMobileImg" alt="cyclist with orange helmet rides on street" title="cyclist with orange helmet rides on street">
+                    <img src="assets/theGramImgs/orangeHelmetMed.jpeg" class="gramImg" alt="cyclist with orange helmet rides on street" title="cyclist with orange helmet rides on street">
+                </div>
+                <div class="theGramImg">
+                    <img src="assets/theGramImgs/proCyclistMobLg.jpg" class="gramMobileImg" alt="crowd watches competitive cyclist passing by" title="crowd watches competitive cyclist passing by">
+                    <img src="assets/theGramImgs/proCyclistMed.jpeg" class="gramImg" alt="crowd watches competitive cyclist passing by" title="crowd watches competitive cyclist passing by">
+                </div>
+                <div class="theGramImg">
+                    <img src="assets/theGramImgs/singleGearMed.jpeg" class="gramImg gramImgBeGone" alt="single-gear bike resting against house exterior" title="single-gear bike resting against house exterior">
                 </div>
             </div>
-
-        </section>
+        </div>
+    </section>
   
     <footer>
         <div class="resolutionWrapper clearfix">
@@ -174,8 +173,7 @@
 
                 <div class="stayUpdatedContainer">
                     <h2 class="themeColor">Stay updated</h2>
-                    <p>Subscribe to your newsletter to stay updated.
-                    </p>
+                    <p>Subscribe to your newsletter to stay updated.</p>
                     <label for="email" class="visuallyhidden">Email</label>
                     <input type="email" name="email" class="emailAddress" placeholder="email address">
                     <button type="submit">Subscribe</button>
