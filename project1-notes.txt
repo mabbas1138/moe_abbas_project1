@@ -2,7 +2,7 @@ TO DO
 
 > Rename development2 branch to "responsive design" or something
 
-> Move unused images to Unusued Images folder and add to .gitignore file
+> Delete unusedImages folder when you're done
 
 > Use "git add -A"
 
@@ -14,7 +14,6 @@ TO DO
 
 ***DO SRCSET AND ADD MOBILE IMAGES***
 -- https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
-
 
 
 > Use imported numbers for font weight 

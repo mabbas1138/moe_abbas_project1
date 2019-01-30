@@ -48,11 +48,6 @@ h1, h2 {
     font-family: "Pacifico", Open Sans;
 }
 
-h1 {
-    font-size: 6rem;
-    display: inline-block;
-}
-
 h2 {
     font-size: 2.1rem;
 }
@@ -96,6 +91,7 @@ a,
 .resolutionWrapper {
     margin: 0 auto;
     max-width: 1600px;
+    width: 100%;
     padding: 1px;
 }
 
@@ -120,10 +116,12 @@ header {
     background-position: center;
     background-size: cover;
     padding: 1px;
+    position: relative;
 }
 
 h1 {
-    margin: 31vh;
+    font-size: 6rem;
+    margin: 250px auto 0 auto;
     text-align: center;
 }
 
@@ -132,9 +130,10 @@ h1 {
 }
 
 .socialMedia {
-    padding-left: 100px;
+    position: absolute;
+    top: 320px;
+    right: 50px;
 }
-
 
 .socialMedia li {
     text-align: center;
@@ -142,10 +141,7 @@ h1 {
 
 .socialMedia a {
      font-size: 1.2rem;
-     
-     
 }
-
 
 /* MAIN CONTENT */
 
@@ -218,7 +214,6 @@ h1 {
     float: left;
     margin-top: 15px;
 }
-
 
 /* 'Services' Section */
 
@@ -310,8 +305,7 @@ footer h2 {
 .stayUpdatedContainer {
     width: 60%;
     float: left;
-    padding-left: 130px;
-    
+    padding-left: 130px; 
 }   
 
 input[type="email"] {
@@ -320,16 +314,20 @@ input[type="email"] {
     width: 432px;
     height: 50px;
     padding-left: 30px;
+    float: left;
 }
 
 button {
+    width: 20%;
     font-size: 0.9rem;
     font-weight: 600;
     text-transform: uppercase;
+    border: none;
     color: #232323;
     background-color: #f2a11c;
-    padding: 15px 30px;
-    border: none;
+    float: left;
+    padding: 15px 15px;
+    
 }
 
 /* 'Copyright' section */
@@ -372,13 +370,6 @@ button {
         height: 768px;
         width: 1024px;  
         background-image: url(assets/headerImgs/headerBgMed.jpeg);
-    }
-
-    .socialMedia li {
-        display: inline-block;
-        margin: 0;
-        padding: 0;
-        
     }
 
     /* About Us section */
@@ -427,11 +418,60 @@ button {
         text-align: center;
     }
 
-    /* Services Section */
+    /* 'Services' Section */
 
     .servicesLinks {
-        margin: 0 auto;
+        margin-left: 200px;
     }
+
+    /* 'The Gram' section */
+
+    .theGram {
+        padding: 20px;
+    }
+
+    .theGramImg {
+        width: 33.3%;
+        margin: 0;
+        padding: 10px 20px 50px 20px;
+    }
+
+    /* FOOTER */
+
+    /* Footer Nav section */
+
+    .navFooter {
+        margin-right: 150px;
+        padding-top: 60px;
+    }
+   
+    .contactContainer {
+        width: 40%;
+        float: left;
+        padding: 20px 0 0 50px;
+    }
+
+    .stayUpdatedContainer {
+        width: 60%;
+        float: left;
+        padding: 20px 0 0 100px; 
+    }   
+
+    input[type="email"] {
+        font-family: "Catamaran", Open Sans;
+        color: #232323;
+        width: 300px;
+        height: 50px;
+        padding-left: 30px;
+    }   
+
+    button {
+        width: 30%;
+        float: left;
+    }
+
+
+
 
 
 
@@ -523,19 +563,26 @@ button {
 
     .blog {
         padding: 0;
-        margin: 0;
+        margin: 0;  
+        width: 400px;
+        height: 1043px;
     }
 
     .blogText {
         width: 100%;
         margin: auto;
-        padding: 20px;
-        /* padding: 10px; */
+        padding: 10px;
     }
 
     .blogText h2 {
         text-align: center;
+        padding-bottom: 30px;
     }
+
+    .blogText p {
+        padding-bottom: 20px;
+    }
+
 
     .blogImg {
         width: 100%;
@@ -545,7 +592,8 @@ button {
     .blogText a {
         width: 214px;
         height: 50px;
-        margin-left: 90px;
+        padding: 10px 50px;
+        margin-left: 80px;
         text-align: center;
     }
 
@@ -556,7 +604,6 @@ button {
         height: 563px;
         background-image: url(assets/servicesImgs/ctrySideBgMed.jpeg);
         background-position: -1000px 0;
-    
     }
 
     .servicesLinks {
@@ -587,13 +634,20 @@ button {
     /* FOOTER */
 
     .navFooter {
-        
+        margin: 0;
+        padding: 0;
+        padding-top: 60px;
+    }
+
+    .navFooter .navLinks {
+        display: inline-block;
+        padding: 0;
     }
 
     .contactContainer {
         width: 100%;
         float: none;
-        padding: 60px;
+        padding: 40px;
         text-align: center;
     }
 
@@ -610,12 +664,14 @@ button {
         text-align: center;
         padding-left: 0;
         margin: 5px 17px;
+        float: left;
     }
 
     button {
         text-align: center;
         width: 90%;
         margin: 5px 17px;
+        float: left;
     }
 
     /* Copyright section */
